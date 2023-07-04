@@ -1,0 +1,15 @@
+name: CI/CD Pull Request
+run-name: ${{github.actor}} is learning GitHub Actions
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run tests
+        run: echo "Testing that runs at pull request:())."
